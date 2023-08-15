@@ -10,3 +10,17 @@ document.getElementById("minus-btn").addEventListener("click", function(){
     count -= 1
     element.innerText = count
 })
+
+
+
+
+// how to call a function in js
+
+function upperName (name){
+    console.log(name.toUpperCase());
+}
+function fullName(first, callback){
+    const fullName = first +" " + "Razzak"
+    callback(fullName)
+}
+fullName("Md : Abdur", upperName)
